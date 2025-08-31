@@ -12,7 +12,7 @@ import AnimatedSkillCard from './components/animatedSkillCard.jsx';
 import Profile from './components/Profile.jsx';
 import { div } from 'framer-motion/client';
 import ProjectCard from './components/ProjectCard.jsx';
-
+import EducationCard from './components/EducationCard.jsx';
 function App() {
   const [count, setCount] = useState(0)
   const skills = [
@@ -29,11 +29,16 @@ function App() {
   { Icon: SiCplusplus, name: "C++" },
   { Icon: SiC, name: "C" },
 ];
+const projects=[
+  {title:"CineRush", description:"A Movie Ticket Booking Platform",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg"},
+  {title:"Twitter Clone", description:"A Twitter(X) Frontend Clone",image:"https://pbs.twimg.com/media/GhtAbrbWkAALQLt?format=jpg&name=4096x4096"},
+  {title:"Sample 3",description:"Comming Soon...",image:""},
+]
   return (
     <>
         <Navbar/>
         {/* Home Content */}
-        <div className='flex'>
+        <div id="Home" className='flex'>
         <div className='w-[65%] '>
           <VantaRings/>
         </div>
@@ -43,7 +48,7 @@ function App() {
         </div>
 
         {/* About Section */}
-        <div className='m-30'>
+        <div id="About" className='m-30'>
           <div className='m-25 flex justify-center text-align-center'>
             <GradientText
         text="About Me"
@@ -79,7 +84,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
           </div>
 
           {/* Skills Section */}
-          <div className='m-60'>
+          <div id="Skill" className='m-60'>
           <div className='m-25 flex justify-center text-align-center'>
             <GradientText
         text="Skills"
@@ -99,7 +104,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
       </div>
 
       {/* Project Section */}
-      <div>
+      <div id="Project" className='mt-60'>
         <div className='m-25 flex justify-center text-align-center'>
             <GradientText
         text="Projects"
@@ -107,12 +112,49 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
       />
           </div>
       <div className='flex flex-wrap gap-10 justify-center m-30 align-items-center'>
-        <ProjectCard title="CineRush" description="This is a description of Project 1." image="https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg" />
-        <ProjectCard title="Project 2" description="This is a description of Project 2." image="https://via.placeholder.com/300x200" />
-        <ProjectCard title="Project 3" description="This is a description of Project 3." image="https://via.placeholder.com/300x200" />
-        <ProjectCard title="Project 4" description="This is a description of Project 4." image="https://via.placeholder.com/300x200" />
+        {projects.map((project,i) => {
+          return(
+            <div key={i}>
+              <ProjectCard d={i} title={project.title} description={project.description} image={project.image}/>
+            </div>
+          )
+        })}
       </div>
       </div>
+
+        {/* Education Section */}
+        <div id="Education" className='mt-60'>
+          <div className='m-25 flex justify-center text-align-center'>
+            <GradientText
+        text="Education"
+        gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
+      />
+          </div>
+
+          <div className='justify-items-center align-items-center '>
+            <EducationCard
+  degree="B.Tech in Computer Science and Engineering"
+  school="Indian Institute Of Information Technology, Kota"
+  year="2024 – 2028"
+  
+/>
+            <EducationCard
+  degree="Senior Secondary Education (12th)"
+  school="St. Mary's Convent School, Agra"
+  year="2023 – 2024"
+  
+/>
+
+          </div>
+        </div>
+
+        {/* Footer Section */}
+        <div className='flex flex-col gap-10 justify-center items-center text-center m-20 p-10'>
+          <GradientText className="text-2xl" text="Dhruv Kanojia" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/>
+          <SiGithub onClick={()=>{
+            window.open("https://github.com/coDing-Knight99/Personal-Portfolio","_blank");
+          }} className="cursor-pointer w-12 h-12 text-indigo-500 dark:text-indigo-400" />
+        </div>
         </div>
     </>
   )
