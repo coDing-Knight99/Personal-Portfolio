@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between gap-10 p-8 mr-10 ml-10 text-lg font-semibold font-josefin sm:max-h-25 '>
-        <div className='w-20 flex h-20'>
+    <div className='flex justify-between gap-10 p-8 text-lg font-semibold font-josefin sm:max-h-25 sticky top-0 z-10'>
+        <div className='w-15 flex h-15 ml-20'>
             <h1 className='font-josefin text-5xl text-white'>D</h1>
             <h1 className='font-josefin text-5xl text-red-600'>/</h1>
             <h1 className='font-josefin text-5xl text-white'>K</h1>

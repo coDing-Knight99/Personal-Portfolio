@@ -30,8 +30,7 @@ export default function VantaRings() {
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="w-full h-screen flex items-center justify-center">
-      <h1 className="text-white text-4xl font-bold"></h1>
+    <div ref={vantaRef} className="w-full h-screen flex items-center scale-x-[-1] justify-center">
     </div>
   );
 }

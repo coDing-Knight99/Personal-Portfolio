@@ -24,12 +24,12 @@ function App() {
         <Navbar/>
         {/* Home Content */}
         <div className='flex'>
+        <div className='w-[65%] '>
+          <VantaRings/>
+        </div>
           <div className='w-[35%] flex p-25 justify-center text-4xl font-thin'>
             <MyComponent/>
           </div>
-        <div className='w-[65%]'>
-          <VantaRings/>
-        </div>
         </div>
 
         {/* About Section */}
