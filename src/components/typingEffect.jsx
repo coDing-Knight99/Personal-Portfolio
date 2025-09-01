@@ -17,7 +17,7 @@ const MyComponent = () => (
       typeSpeed={40}
       backSpeed={50}
       loop
-      className="font-inter text-4xl text-red-600"
+      className="font-inter text-5xl text-red-600"
     >
       <input type="text" />
     </ReactTyped>
