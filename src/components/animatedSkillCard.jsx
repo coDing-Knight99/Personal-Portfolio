@@ -9,7 +9,7 @@ export default function AnimatedSkillCard({ Icon, name }) {
                  dark:border-gray-700 hover:shadow-xl transition bg-white dark:bg-gray-900 cursor-pointer"
     >
       <Icon className="w-12 h-12 text-indigo-500 dark:text-indigo-400" />
-      <p className="mt-5 text-lg font-semibold text-gray-800 dark:text-gray-200">{name}</p>
+      <p className="mt-5 text-lg font-semibold text-gray-200 dark:text-gray-200">{name}</p>
     </motion.div>
   );
 }
