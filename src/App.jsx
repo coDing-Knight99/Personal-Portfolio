@@ -39,10 +39,10 @@ const projects=[
         <Navbar/>
         {/* Home Content */}
         <div id="Home" className='flex'>
-        <div className='w-[65%] '>
+        <div className='w-[65%] md:block hidden '>
           <VantaRings/>
         </div>
-          <div className='w-[35%] flex p-25 justify-center text-4xl font-thin'>
+          <div className='md:w-[35%] flex p-25 justify-center text-4xl font-thin'>
             <MyComponent/>
           </div>
         </div>

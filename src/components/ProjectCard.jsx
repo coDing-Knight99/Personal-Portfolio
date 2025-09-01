@@ -9,7 +9,7 @@ export default function ProjectCard({d, title, description, image }) {
         
             initial={{ opacity: 0, y: 50 }}
             whileInView ={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6,delay:d }}
+            transition={{ duration: 0.6,delay:d*0.5 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.05, y: -5 }}
             className="relative rounded-2xl p-[2px] bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-xl overflow-hidden"
