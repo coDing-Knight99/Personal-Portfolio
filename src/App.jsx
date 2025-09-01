@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Fade } from "react-awesome-reveal";
 import Navbar from './components/Navbar'
 import VantaRings from './components/vantaring'
-import {MyComponent} from './components/typingeffect.jsx'
+import {MyComponent} from './components/typingEffect.jsx'
 import './App.css'
 import GradientText from './components/gradienttext.jsx'
 import me from './assets/me.jpg'
