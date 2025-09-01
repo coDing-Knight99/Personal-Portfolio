@@ -2,7 +2,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import GradientText from "./gradienttext";
 
-export default function ProjectCard({d, title, description, image }) {
+export default function ProjectCard({d, title, description, image, demo, code}) {
   return (
 
 <motion.div
@@ -25,14 +25,18 @@ export default function ProjectCard({d, title, description, image }) {
                 <p className="text-gray-300 text-lg mt-2">{description}</p>
                 <div className="flex gap-3 mt-4">
                   <a
-                    href="project.demo"
-                    className="px-3 py-1 rounded-lg bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 font-bold text-lg  shadow-md"
+                    href={demo}
+                    target="_blank"
+                    
+                    className="cursor-pointer px-3 py-1 rounded-lg bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 font-bold text-lg  shadow-md"
                   >
                     Demo
                   </a>
                   <a
-                    href="project.code"
-                    className="px-3 py-1 rounded-lg bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 font-bold text-lg  shadow-md"
+                    href={code}
+                    target="_blank"
+        
+                    className="cursor-pointer px-3 py-1 rounded-lg bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 font-bold text-lg  shadow-md"
                   >
                     Code
                   </a>

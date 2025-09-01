@@ -10,7 +10,7 @@ import { FaReact, FaNodeJs, FaPython, FaGit, FaJava } from "react-icons/fa";
 import { SiMongodb,SiTailwindcss,SiExpress,SiGithub,SiJavascript,SiCplusplus,SiC,SiLinkedin,SiCodechef,SiLeetcode,SiCodeforces } from 'react-icons/si';
 import AnimatedSkillCard from './components/animatedSkillCard.jsx';
 import Profile from './components/Profile.jsx';
-import { div } from 'framer-motion/client';
+import { code, div } from 'framer-motion/client';
 import ProjectCard from './components/ProjectCard.jsx';
 import EducationCard from './components/EducationCard.jsx';
 function App() {
@@ -30,9 +30,9 @@ function App() {
   { Icon: SiC, name: "C" },
 ];
 const projects=[
-  {title:"CineRush", description:"A Movie Ticket Booking Platform",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg"},
-  {title:"Twitter Clone", description:"A Twitter(X) Frontend Clone",image:"https://pbs.twimg.com/media/GhtAbrbWkAALQLt?format=jpg&name=4096x4096"},
-  {title:"Sample 3",description:"Comming Soon...",image:""},
+  {title:"CineRush", description:"A Movie Ticket Booking Platform",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
+  {title:"Twitter Clone", description:"A Twitter(X) Frontend Clone",image:"https://pbs.twimg.com/media/GhtAbrbWkAALQLt?format=jpg&name=4096x4096",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
+  {title:"Sample 3",description:"Comming Soon...",image:"",demo:"",code:""},
 ]
   return (
     <>
@@ -115,7 +115,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
         {projects.map((project,i) => {
           return(
             <div key={i}>
-              <ProjectCard d={i} title={project.title} description={project.description} image={project.image}/>
+              <ProjectCard d={i} title={project.title} description={project.description} image={project.image} demo={project.demo} code={project.code}/>
             </div>
           )
         })}
