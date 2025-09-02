@@ -20,7 +20,7 @@ function App() {
   { Icon: FaNodeJs, name: "Node" },
   { Icon: FaPython, name: "Python" },
   { Icon: FaGit, name: "Git" },
-  { Icon: SiGithub, name: "Express" },
+  { Icon: SiGithub, name: "Git Hub" },
   { Icon: SiMongodb, name: "Mongo" },
   { Icon: SiTailwindcss, name: "Tailwind" },
   { Icon: SiExpress, name: "Express" },
