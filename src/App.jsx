@@ -14,6 +14,9 @@ import { code, div } from 'framer-motion/client';
 import ProjectCard from './components/ProjectCard.jsx';
 import EducationCard from './components/EducationCard.jsx';
 import VantaHalo from './components/vantahalo.jsx';
+
+// const [menu, setmenu] = useState(false);
+
 function App() {
   const [count, setCount] = useState(0)
   const skills = [
@@ -53,8 +56,8 @@ const projects=[
     </div>
 
     {/* MyComponent sits above, width constrained */}
-    <div className="relative z-10 flex px-4 py-6 sm:px-6 sm:py-8 md:px-10 md:py-12 
-                m-2 sm:m-5 text-xl sm:text-2xl md:text-3xl xl:text-4xl  bg-transparent w-full max-w-full">
+    <div className="relative flex px-4 py-6 sm:px-6 sm:py-8 md:px-10 md:py-12 
+                 sm:m-5 text-xl sm:text-2xl md:text-3xl xl:text-4xl  bg-transparent w-full max-w-full ">
   <MyComponent />
 </div>
 
@@ -80,7 +83,7 @@ const projects=[
             </div>
             <div className=' md:m-10 text-center text-2xl md:w-[50%] w-full font-light'>
               
-               <p className=''><GradientText
+               <p ><GradientText
         text="I"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
       />{" "} am a second-year Computer Science undergraduate at IIIT Kota, with a strong passion for competitive programming and backend development. Through competitive programming, I have developed a solid foundation in data structures, algorithms, and problem-solving techniques, which has strengthened my analytical thinking and ability to approach challenges with efficiency and precision.
@@ -99,7 +102,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
           </div>
           </div>
           {/* Skills Section */}
-          <div id="Skill" className='xl:mt-60'>
+          <div id="Skills" className='xl:mt-60'>
           <div className='mt-25 flex justify-center text-center'>
             <GradientText
         text="Skills"
@@ -121,7 +124,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
       </div>
 
       {/* Project Section */}
-      <div id="Project" className='xl:mt-60 mt-30'>
+      <div id="Projects" className='xl:mt-60 mt-30'>
         <div className='mt-25 flex justify-center text-align-center'>
             <GradientText
         text="Projects"
