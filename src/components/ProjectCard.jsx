@@ -14,7 +14,7 @@ export default function ProjectCard({d, title, description, image, demo, code}) 
             whileHover={{ scale: 1.05, y: -5 }}
             className="relative rounded-2xl p-[2px] bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-xl overflow-hidden"
           >
-            <div className="bg-black/60 backdrop-blur-xl rounded-2xl overflow-hidden md:w-100 md:h-200 h-150 w-80">
+            <div className="bg-black/60 backdrop-blur-xl rounded-2xl overflow-hidden md:w-100 md:h-170 h-150 w-80">
               <img
                 src={image}
                 alt={title}
