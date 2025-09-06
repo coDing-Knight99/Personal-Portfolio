@@ -14,11 +14,11 @@ export default function ProjectCard({d, title, description, image, demo, code}) 
             whileHover={{ scale: 1.05, y: -5 }}
             className="relative rounded-2xl p-[2px] bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-xl overflow-hidden"
           >
-            <div className="bg-black/60 backdrop-blur-xl rounded-2xl overflow-hidden w-100 h-150">
+            <div className="bg-black/60 backdrop-blur-xl rounded-2xl overflow-hidden md:w-100 md:h-200 h-150 w-80">
               <img
                 src={image}
                 alt={title}
-                className="w-full h-[70%] object-cover"
+                className="w-full h-[60%] md:h-[75%] object-cover"
               />
               <div className="p-5">
                 <GradientText text={title} gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)" />

@@ -13,6 +13,7 @@ import Profile from './components/Profile.jsx';
 import { code, div } from 'framer-motion/client';
 import ProjectCard from './components/ProjectCard.jsx';
 import EducationCard from './components/EducationCard.jsx';
+import VantaHalo from './components/vantahalo.jsx';
 function App() {
   const [count, setCount] = useState(0)
   const skills = [
@@ -31,41 +32,53 @@ function App() {
 ];
 const projects=[
   {title:"CineRush", description:"A Movie Ticket Booking Platform",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
-  {title:"Twitter Clone", description:"A Twitter(X) Frontend Clone",image:"https://pbs.twimg.com/media/GhtAbrbWkAALQLt?format=jpg&name=4096x4096",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
+  {title:"Twitter Clone", description:"A Twitter(X) Frontend Clone",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfF9HqKARerlalRgX3icOlm2Dj3CXhcY7ai_picX_7KqawOrLcg2HelTKt8RjIfFwQVE&usqp=CAU",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
   {title:"Sample 3",description:"Comming Soon...",image:"",demo:"",code:""},
 ]
   return (
-    <>
+    <div className="w-screen overflow-x-hidden">
         <Navbar/>
         {/* Home Content */}
-        <div id="Home" className='flex'>
-        <div className='w-[65%] md:block hidden '>
-          <VantaRings/>
-        </div>
-          <div className='md:w-[35%] flex p-25 justify-center text-4xl font-thin'>
-            <MyComponent/>
-          </div>
-        </div>
+        <div id="Home" className='flex xl:flex-row flex-col h-screen w-screen'>
+  {/* Left side */}
+  <div className='w-[65%] xl:block hidden'>
+    <VantaRings />
+  </div>
+
+  {/* Right side wrapper */}
+  <div className="relative xl:w-[35%] w-full flex justify-center">
+    {/* Halo fills wrapper (not shrunk to 35%) */}
+    <div className="absolute inset-0 xl:hidden block">
+      <VantaHalo />
+    </div>
+
+    {/* MyComponent sits above, width constrained */}
+    <div className="relative z-10 flex justify-center p-10 text-4xl font-thin bg-transparent">
+      <MyComponent />
+    </div>
+  </div>
+</div>
+
 
         {/* About Section */}
-        <div id="About" className='m-30'>
-          <div className='m-25 flex justify-center text-align-center'>
+        <div id="About" className='xl:m-30 mt-50 sm:flex sm:flex-col sm:justify-center sm:items-center sm:text-center '>
+          <div className='md:m-25 flex justify-center items-center'>
             <GradientText
         text="About Me"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
       />
           </div>
-          <div className='flex justify-center text-align-center gap-50 text-white m-10'>
-            <div>
+          <div className='flex md:flex-row flex-col justify-center items-center md:items-start text-align-center xl:gap-50 gap-30 text-white m-10'>
+            <div className='max-w-80 max-h-80'>
   <Fade>
-    <div className=" border-8 m-10 border-purple-500 rounded-lg shadow-2xl">
-      <img src={me} alt="Me" className=" w-80 h-80 object-cover" />
+    <div className="border-8 md:m-10 border-purple-500 rounded-lg shadow-2xl">
+      <img src={me} alt="Me" className="object-cover" />
     </div>
   </Fade>
             </div>
-            <div className=' m-10 text-2xl w-[50%] font-light gap-1'>
+            <div className=' md:m-10 text-center text-2xl md:w-[50%] w-full font-light'>
               
-               <p><GradientText
+               <p className=''><GradientText
         text="I"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
       />{" "} am a second-year Computer Science undergraduate at IIIT Kota, with a strong passion for competitive programming and backend development. Through competitive programming, I have developed a solid foundation in data structures, algorithms, and problem-solving techniques, which has strengthened my analytical thinking and ability to approach challenges with efficiency and precision.
@@ -82,16 +95,17 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
             </div>
             </div>
           </div>
-
+          </div>
           {/* Skills Section */}
-          <div id="Skill" className='m-60'>
-          <div className='m-25 flex justify-center text-align-center'>
+          <div id="Skill" className='mt-60'>
+          <div className='m-25 flex justify-center text-center'>
             <GradientText
         text="Skills"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
       />  
       </div>
-      <div className='flex flex-wrap align-items-center justify-center m-10'>
+      <div className='flex justify-center items-center'>
+      <div className='flex flex-wrap items-center justify-center w-[65%] m-10'>
         {skills.map((skill,i)=>{
           return(
             <div className='m-5 ' key={i}>
@@ -100,6 +114,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
           )
         })
         }
+      </div>
       </div>
       </div>
 
@@ -131,7 +146,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
       />
           </div>
 
-          <div className='justify-items-center align-items-center '>
+          <div className='flex flex-col justify-center items-center '>
             <EducationCard
   degree="B.Tech in Computer Science and Engineering"
   school="Indian Institute Of Information Technology, Kota"
@@ -155,8 +170,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
             window.open("https://github.com/coDing-Knight99/Personal-Portfolio","_blank");
           }} className="cursor-pointer w-12 h-12 text-indigo-500 dark:text-indigo-400" />
         </div>
-        </div>
-    </>
+    </div>
   )
 }
 
