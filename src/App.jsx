@@ -46,7 +46,7 @@ const projects=[
   </div>
 
   {/* Right side wrapper */}
-  <div className="relative xl:w-[35%] w-full flex justify-center w-screen">
+  <div className="relative xl:w-[35%] flex justify-center w-screen">
     {/* Halo fills wrapper (not shrunk to 35%) */}
     <div className="absolute inset-0 xl:hidden block">
       <VantaHalo />
