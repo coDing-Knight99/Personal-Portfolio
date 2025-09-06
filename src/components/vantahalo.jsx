@@ -19,8 +19,8 @@ export default function VantaHalo() {
           minWidth: 50.0,
           baseColor: 0x000000,       // blue glow
           backgroundColor: 0x000000, // set to black, or 0x00000000 for transparent
-          amplitudeFactor: 0.05,
-          size: 0.5,
+          amplitudeFactor: 0.1,
+          size: 0.3,
         })
       );
     }
