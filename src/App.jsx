@@ -89,7 +89,7 @@ Beyond coding contests, I am deeply interested in designing and implementing sca
 
 Looking ahead, I aim to further deepen my skills in system design, software engineering, and backend technologies, while continuing to refine my competitive programming abilities. With curiosity as my driving force, I aspire to build innovative solutions that make a meaningful difference.</p>
 
-            <div className='flex gap-3 mt-15 align-items-center justify-center'>
+            <div className='flex xl:gap-3 mt-15 align-items-center justify-center'>
               <Profile Icon={SiLinkedin} link={"https://www.linkedin.com/in/dhruv-kanojia-8396a731a/"}/>
               <Profile Icon={SiLeetcode} link={"https://leetcode.com/u/coDing__Knight/"}/>
               <Profile Icon={SiCodechef} link={"https://www.codechef.com/users/codingknight99"}/>

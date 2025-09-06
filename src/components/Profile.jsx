@@ -10,7 +10,7 @@ export default function Profile({ Icon ,link }) {
     >
       <Icon onClick={()=>{
         window.open(link,'_blank');
-      }} className="w-12 h-12 text-indigo-500 dark:text-indigo-400" />
+      }} className="xl:w-12 xl:h-12 w-10 h-10 text-indigo-500 dark:text-indigo-400" />
       
     </motion.div>
   );
