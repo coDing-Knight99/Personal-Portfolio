@@ -15,12 +15,12 @@ export default function VantaHalo() {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 50.0,
-          minWidth: 50.0,
+          minHeight: 0,
+          minWidth: 0,
           baseColor: 0x000000,       // blue glow
           backgroundColor: 0x000000, // set to black, or 0x00000000 for transparent
-          amplitudeFactor: 0.1,
-          size: 0.3,
+          amplitudeFactor: 0.2,
+          size: 0.4,
         })
       );
     }
