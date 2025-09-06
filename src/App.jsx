@@ -33,7 +33,7 @@ function App() {
 const projects=[
   {title:"CineRush", description:"A Movie Ticket Booking Platform",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
   {title:"Twitter Clone", description:"A Twitter(X) Frontend Clone",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfF9HqKARerlalRgX3icOlm2Dj3CXhcY7ai_picX_7KqawOrLcg2HelTKt8RjIfFwQVE&usqp=CAU",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
-  {title:"Sample 3",description:"Comming Soon...",image:"",demo:"",code:""},
+  {title:"Sample 3",description:"Comming Soon...",image:"https://i.pinimg.com/564x/f9/28/e2/f928e27b6513d0d9c25a1b80293b12d1.jpg",demo:"",code:""},
 ]
   return (
     <div className="w-screen overflow-x-hidden">
