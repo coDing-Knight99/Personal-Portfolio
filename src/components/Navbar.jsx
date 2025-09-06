@@ -10,7 +10,7 @@ const Navbar = () => {
             <h1 className='font-josefin text-5xl text-red-600'>/</h1>
             <h1 className='font-josefin text-5xl text-white'>K</h1>
         </div>
-        <div className='flex justify-between text-[#00FFFF] gap-10 mr-10 ml-10 font-josefin'>
+        <div className='flex justify-between text-[#00FFFF] gap-10 xl:mr-10 ml-10 font-josefin'>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Home" smooth={true} duration={500} className="cursor-pointer px-4 py-2"><NavGradientText text="Home" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="About" smooth={true} duration={500} className="cursor-pointer px-4 py-2"><NavGradientText text="About" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Skill" smooth={true} duration={500} className="cursor-pointer px-4 py-2"><NavGradientText text="Skills" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
