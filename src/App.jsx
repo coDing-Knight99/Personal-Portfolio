@@ -63,7 +63,7 @@ const projects=[
 
 
         {/* About Section */}
-        <div id="About" className='xl:m-30 mt-50 sm:flex sm:flex-col sm:justify-center sm:items-center sm:text-center '>
+        <div id="About" className='xl:m-30 mt-30 sm:flex sm:flex-col sm:justify-center sm:items-center sm:text-center '>
           <div className='md:m-25 flex justify-center items-center'>
             <GradientText
         text="About Me"
@@ -99,8 +99,8 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
           </div>
           </div>
           {/* Skills Section */}
-          <div id="Skill" className='mt-60'>
-          <div className='m-25 flex justify-center text-center'>
+          <div id="Skill" className='xl:mt-60'>
+          <div className='mt-25 flex justify-center text-center'>
             <GradientText
         text="Skills"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
@@ -121,8 +121,8 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
       </div>
 
       {/* Project Section */}
-      <div id="Project" className='mt-60'>
-        <div className='m-25 flex justify-center text-align-center'>
+      <div id="Project" className='xl:mt-60 mt-30'>
+        <div className='mt-25 flex justify-center text-align-center'>
             <GradientText
         text="Projects"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
@@ -141,7 +141,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
 
         {/* Education Section */}
         <div id="Education" className='mt-60'>
-          <div className='m-25 flex justify-center text-align-center'>
+          <div className='mt-25 mb-10 flex justify-center text-align-center'>
             <GradientText
         text="Education"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"

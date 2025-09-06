@@ -2,7 +2,7 @@ import { GraduationCap } from "lucide-react";
 
 export default function EducationCard({ degree, school, year}) {
   return (
-    <div className="m-10 md:w-[50%] relative rounded-2xl p-[1px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-lg hover:scale-[1.02] transition-all duration-300">
+    <div className="xl:m-10 m-5 md:w-[50%] relative rounded-2xl p-[1px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-lg hover:scale-[1.02] transition-all duration-300">
       <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 h-full">
         {/* Header */}
         <div className="flex items-center md:gap-3 gap-5 mb-4">
