@@ -53,9 +53,11 @@ const projects=[
     </div>
 
     {/* MyComponent sits above, width constrained */}
-    <div className="relative z-10 flex justify-center p-10 m-5 text-4xl font-thin bg-transparent">
-      <MyComponent />
-    </div>
+    <div className="relative z-10 flex px-4 py-6 sm:px-6 sm:py-8 md:px-10 md:py-12 
+                m-2 sm:m-5 text-xl sm:text-2xl md:text-3xl xl:text-4xl  bg-transparent w-full max-w-full">
+  <MyComponent />
+</div>
+
   </div>
 </div>
 

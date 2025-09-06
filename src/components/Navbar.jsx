@@ -16,7 +16,7 @@ const Navbar = () => {
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Skill" smooth={true} duration={500} className="cursor-pointer px-4 py-2"><NavGradientText text="Skills" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Project" smooth={true} duration={500} className="cursor-pointer px-4 py-2"><NavGradientText text="Projects" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Education" smooth={true} duration={500} className="cursor-pointer px-4 py-2"><NavGradientText text="Education" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
-        <div className='cursor-pointer lg:hidden block'><MenuIcon /></div>
+        <div className='cursor-pointer lg:hidden flex justify-center items-center'><MenuIcon /></div>
         </div>
     </div>
   )
