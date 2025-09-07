@@ -42,7 +42,7 @@ const projects=[
     <div className="w-screen overflow-x-hidden">
         <Navbar/>
         {/* Home Content */}
-        <div id="Home" className='flex xl:flex-row flex-col h-screen w-screen'>
+        <div id="Home" className='scroll-mt-28 flex xl:flex-row flex-col h-screen w-screen'>
   {/* Left side */}
   <div className='w-[65%] xl:block hidden'>
     <VantaRings />
@@ -66,8 +66,8 @@ const projects=[
 
 
         {/* About Section */}
-        <div id="About" className='xl:m-30 mt-30 sm:flex sm:flex-col sm:justify-center sm:items-center sm:text-center '>
-          <div className='md:m-25 flex justify-center items-center'>
+        <div id="About" className='scroll-mt-28 xl:m-30 mt-30 sm:flex sm:flex-col sm:justify-center sm:items-center sm:text-center '>
+          <div className='md:mt-25 flex justify-center items-center'>
             <GradientText
         text="About Me"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
@@ -102,7 +102,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
           </div>
           </div>
           {/* Skills Section */}
-          <div id="Skills" className='xl:mt-60'>
+          <div id="Skills" className='scroll-mt-28 xl:mt-60'>
           <div className='mt-25 flex justify-center text-center'>
             <GradientText
         text="Skills"
@@ -124,7 +124,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
       </div>
 
       {/* Project Section */}
-      <div id="Projects" className='xl:mt-60 mt-30'>
+      <div id="Projects" className='scroll-mt-28 xl:mt-60 mt-30'>
         <div className='mt-25 flex justify-center text-align-center'>
             <GradientText
         text="Projects"
@@ -143,7 +143,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
       </div>
 
         {/* Education Section */}
-        <div id="Education" className='mt-60'>
+        <div id="Education" className='scroll-mt-50 mt-60'>
           <div className='mt-25 mb-10 flex justify-center text-align-center'>
             <GradientText
         text="Education"

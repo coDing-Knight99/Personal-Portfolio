@@ -1,7 +1,7 @@
 import { ReactTyped } from "react-typed";
 
 const MyComponent = () => (
-  <div className="bg-transparent">
+  <div className="bg-transparent mt-30">
     <ReactTyped strings={["Hey there,"]} typeSpeed={40} showCursor={false} className="xl:text-6xl text-4xl text-[#00FFFF] " />
     <br />
     <br />
