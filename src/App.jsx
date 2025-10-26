@@ -125,7 +125,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
 
       {/* Project Section */}
       <div id="Projects" className='scroll-mt-28 xl:mt-60 mt-30'>
-        <div className='mt-25 flex'>
+        <div className='mt-25 flex items-center justify-center'>
             <GradientText
         text="Projects"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
