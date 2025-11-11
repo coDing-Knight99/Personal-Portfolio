@@ -130,6 +130,9 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
         text="Projects"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
       />
+
+
+      
           </div>
       <div className='flex flex-wrap gap-10 justify-center m-30 align-items-center'>
         {projects.map((project,i) => {
